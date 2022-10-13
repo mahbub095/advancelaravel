@@ -4,9 +4,9 @@
         <div class="mb-2 mb-md-0">
             ©
             <script>
-                document.write(new Date().getFullYear());
+            document.write(new Date().getFullYear());
             </script>
-            My course
+            Test project
         </div>
     </div>
 </footer>

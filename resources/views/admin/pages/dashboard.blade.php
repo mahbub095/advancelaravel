@@ -11,7 +11,7 @@
     </style>
 @endpush
 @section('admin_content')
-    <h1>Welcome to Advance Project Dashboard</h1>
+    <h1>Welcome to Test Project Dashboard</h1>
 
     <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
