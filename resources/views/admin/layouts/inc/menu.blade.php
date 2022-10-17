@@ -113,12 +113,12 @@
             </a>
             <ul class="menu-sub">
                 <li class="menu-item">
-                    <a href=" " class="menu-link">
+                    <a href="{{ route('role.index') }}" class="menu-link">
                         <div data-i18n="Account">List</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href=" " class="menu-link">
+                    <a href="{{ route('role.create') }}" class="menu-link">
                         <div data-i18n="Notifications">Create</div>
                     </a>
                 </li>
