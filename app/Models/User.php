@@ -19,7 +19,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        // 'role_id',
+        'role_id',
         'name',
         'email',
         'password',
@@ -44,16 +44,16 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    //  /*relationship with role */
-    //  public function role()
-    //  {
-    //      return $this->belongsTo(Role::class);
-    //  }
+     /*relationship with role */
+     public function role()
+     {
+         return $this->belongsTo(Role::class);
+     }
  
-    //  /*relationship with permissions */
-    //  // true or false
-    //  public function hasPermission($permission_slug)
-    //  {
-    //      return $this->role->permissions()->where('permission_slug', $permission_slug)->first() ? true : false ;
-    //  }
+     /*relationship with permissions */
+     // true or false
+     public function hasPermission($permission_slug)
+     {
+         return $this->role->permissions()->where('permission_slug', $permission_slug)->first() ? true : false ;
+     }
 }
