@@ -50,7 +50,7 @@ class UserController extends Controller
      */
     public function store(UserStoreRequest $request)
     {
-        Gate::authorize('create-user');
+        // Gate::authorize('create-user');
         User::updateOrCreate([
             'role_id' => $request->role_id,
             'name' => $request->name,
